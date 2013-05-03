@@ -1,0 +1,8 @@
+Install ZMQ::LibZMQ2 and ZMQ::Constants from CPAN.
+
+1) Run 'perl ROUTER.py'
+2) Run 'perl DEALER.py' in another shell
+
+If you want to use libzmq3, then porting to use ZMQ::LibZMQ3 instead is
+trivial (here: replace LibZMQ2 with LibZMQ3), but I didn't have a
+version 3 library at hand.
