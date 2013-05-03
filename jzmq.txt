@@ -1,0 +1,9 @@
+It took 4.63 seconds to process 600000 messages of size 10 Byte(s) in a batch
+129729.73 messages/second
+
+It took 34.30 seconds to process 600000 messages of size 1.0 KiloByte(s) in a batch
+17494.75 messages/second
+
+It took 48.36 seconds to process 100000 messages of size 10.0 KiloByte(s) in a batch
+2067.82 messages/second
+(If I try to send 600,000 messages of 10 kilobytes in a batch, it says "not enough space".)

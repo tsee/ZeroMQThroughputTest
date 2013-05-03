@@ -1,0 +1,8 @@
+It took 11.79 seconds to process 40000 messages of size 10Byte(s) in a batch
+3390.73  messages/second
+
+It took 13.70 seconds to process 40000 messages of size 1.0Kilobyte(s) in a batch
+2919.04  messages/second
+
+It took 20.67 seconds to process 40000 messages of size 10.0Kilobyte(s) in a batch
+1935  messages/second

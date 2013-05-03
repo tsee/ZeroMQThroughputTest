@@ -1,0 +1,4 @@
+1) First, run "mvn compile"
+2) Run 'mvn exec:java -Dexec.mainClass="ThroughputTest.Router"'
+3) Run 'mvn exec:java -Dexec.mainClass="ThroughputTest.Dealer"' in another shell, and
+see the result

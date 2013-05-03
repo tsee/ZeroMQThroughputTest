@@ -1,0 +1,8 @@
+It took 1.59 seconds to process 600000 messages of size 10 Byte(s) in a batch
+376411.54 messages/second
+
+It took 35.81 seconds to process 600000 messages of size 1.0 KiloByte(s) in a batch
+16754.16 messages/second
+
+It took 304.89 seconds to process 600000 messages of size 10.0 KiloByte(s) in a batch
+1967.92 messages/second
