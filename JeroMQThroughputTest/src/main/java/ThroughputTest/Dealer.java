@@ -33,8 +33,8 @@ public class Dealer implements AutoCloseable {
         Dealer dealer=new Dealer();
         
         dealer.getRepliesInBatch(volume, TenBytes);
-        dealer.getRepliesInBatch(volume, KiloBytes);
-        dealer.getRepliesInBatch(volume, TenKiloBytes);
+        dealer.getRepliesInBatch(volume/4, KiloBytes);
+        dealer.getRepliesInBatch(volume/16, TenKiloBytes);
         
         dealer.close();
     }

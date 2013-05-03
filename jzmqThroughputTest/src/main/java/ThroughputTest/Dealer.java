@@ -9,7 +9,7 @@ public class Dealer implements AutoCloseable {
     private ZContext ctx;
     private ZMQ.Socket dealer;
     private String addr="tcp://127.0.0.1:5557";
-    private static int volume=100000;
+    private static int volume=600000;
     
     public Dealer() {
         ctx=new ZContext();
@@ -34,8 +34,8 @@ public class Dealer implements AutoCloseable {
         Dealer dealer=new Dealer();
         
         dealer.getRepliesInBatch(volume, TenBytes);
-        dealer.getRepliesInBatch(volume, KiloBytes);
-        dealer.getRepliesInBatch(volume, TenKiloBytes);
+        dealer.getRepliesInBatch(volume/4, KiloBytes);
+        dealer.getRepliesInBatch(volume/16, TenKiloBytes);
         
         dealer.close();
     }

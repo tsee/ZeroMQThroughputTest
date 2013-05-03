@@ -26,9 +26,9 @@ volume=150000
 
 ctx=zmq.Context()
 sock=ctx.socket(zmq.DEALER)
-sock.hwm=volume
+sock.hwm=volume*3
 sock.setsockopt(zmq.LINGER, 200)
-sock.connect("tcp://127.0.0.1:5556")
+sock.connect("tcp://127.0.0.1:5555")
 
 TenBytes=b"1234567890"
 KiloBytes=b"1"
@@ -41,4 +41,4 @@ for i in range(1, 10):
     
 getRepliesInBatch(volume, TenBytes)
 getRepliesInBatch(volume, KiloBytes)
-getRepliesInBatch(volume, TenKiloBytes)
+getRepliesInBatch(volume//4, TenKiloBytes)

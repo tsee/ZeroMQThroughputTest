@@ -7,7 +7,7 @@ import org.zeromq.ZMsg;
 
 public class Router {
     private static String addr="tcp://127.0.0.1:5557";
-    private static int volume=100000;
+    private static int volume=600000;
     
     public static void main(String[] args) {
         ZContext ctx=new ZContext();
